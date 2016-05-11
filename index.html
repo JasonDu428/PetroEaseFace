@@ -1,17 +1,16 @@
-    
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="petroease">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>PetroEase</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,11 +19,161 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+    <style>
+    body{
+      padding-top: 40px;
+    }
+    </style>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle= "collapse" data-target="#navbar-collapse">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+          </button>
+
+          <a href="" class="navbar-brand">PetroEase</a>
+        </div> <!-- Navbar Header -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <a href="" class="btn btn-info navbar-btn navbar-right">Login In </a>
+          <ul class="nav navbar-nav">
+            <li> <a href = "#feedback">Feedback</a>
+            <li> <a href = "#feedback">Gallery</a>
+            <li> <a href = "#feedback">Features</a>
+            <li> <a href = "#feedback">Faq</a>
+            <li> <a href = "#contact">Contact us</a>
+          </ul>
+        </div>
+      </div>  <!-- end of container-->
+    </nav>
+
+    <!-- jumbotron -->
+
+    <div class="jumbotron">
+      <div class = "container text-center">
+            <h1>Welcome to PetroEase</h1>
+            <p> The bestf fdafdfakjsdf fdajflsdjflkasj djaflsdjlasdjfkl dfajldjflasjdf dfadjfiajdfa dafjdlfj</p>
+
+            <div class="btn-group">
+              <a href="" class="btn btn-lg btn-info"> Download App</a>
+              <a href="" class="btn btn-lg btn-default"> Visit store</a>
+              <a href="" class="btn btn-lg btn-warning"> Spread the word</a>
+            </div>
+      </div>
+    </div> <!-- end of jumbotron -->
+
+    <div class="container text-center" id="feedback">
+
+      <section>
+        <div class="page-header">
+          <h2> Feedback <br> <small> Check out the awesome Feedback</small></h2>
+
+        </div>
+        <div class="row">
+          <div class= "col-lg-4">
+            <blockquote>
+              <p> fdsafhdioahfdoiahfodihafoidhiadf </p>
+              <footer> bob </footer>
+            </blockquote>
+          </div>
+
+          <div class= "col-lg-4">
+            <blockquote>
+              <p> fdsafhdioahfdoiahfodihafoidhiadf </p>
+              <footer> bob </footer>
+            </blockquote>
+          </div>
+
+          <div class= "col-lg-4">
+            <blockquote>
+              <p> fdsafhdioahfdoiahfodihafoidhiadf </p>
+              <footer> bob </footer>
+            </blockquote>
+          </div>
+
+        </div>
+      </section>
+    </div> <!-- end of container -->
+
+    <!-- call to action -->
+    <div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <section>
+      <div class="well text-center" id="contact">
+        <h2> Contact Us </h2>
+        <hr>
+        <form>
+  <fieldset class="form-group text-center">
+  <label for="exampleInputName2">Name</label>
+  <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  </fieldset>
+
+  <fieldset class="form-group text-center">
+    <label for="exampleInputEmail1">Email Address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </fieldset>
+
+  <fieldset class="form-group text-center">
+  <label for="exampleInputName2">Phone Number</label>
+  <input type="tel" class="form-control" id="exampleInputName2" placeholder="Optional" >
+
+  </fieldset>
+
+
+  <fieldset class="form-group text-center">
+    <label for="exampleTextarea">Message</label>
+    <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+  </fieldset>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+      </div>
+    </section>
+  </div>
+</div>
+<!-- call to action -->
+
+<!-- Gallery -->
+ <div class= "container">
+   <section>
+     <div class="page-header" id="gallery">
+     <h2> Gallery <br> <small> Check out the awesome Gallery</small></h2>
+    </div>
+    <div class= "carousel slide" id="screenshot-carousel" data-ride="carousel">
+    <ol class= "carousel-indicators">
+      <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+      <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="media/1.jpg" alt="Optimize Production">
+    </div>
+
+    <div class="item">
+      <img src="media/2.jpg" alt="Oil and gas">
+    </div>
+
+    <div class="item">
+    <img src="media/3.jpg" alt="Production Data">
+    </div>
+
+      </div>
+   </section>
+ </div>
+
+<!-- end of Gallery -->
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
